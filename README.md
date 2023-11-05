@@ -1,0 +1,1 @@
+I'm up for the challenge of learning JavaScript over the next 21 days. I'll be sourcing my knowledge from various places and documentation, and I plan to provide daily updates. I'll be relying on a variety of resources, including YouTube channels like Namaste React, Hitesh Chaudhary, and the Udemy course by Max, as well as working on projects.
