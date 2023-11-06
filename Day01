@@ -1,1 +1,66 @@
-Learning Js in namaste JS , hitesh, simple dev(6hr).....
+Learning JS with Hitesh--
+
+what is meaning different extensions at the end of file??
+Js use in backend/mobiles etc...
+Node and Deno JS??
+Installing Node JS(LTS-- long term support);
+
+node fileName with extension(js)
+
+scope????
+Use of only let and const..
+Prefer not to use var because of issue in block scope and functional scope..
+
+const name = "sarvesh";
+const title = "gupta";
+let titleName;
+console.table([name , title, titleName]);
+
+
+"use strict"; //treat all JS code as newer version
+
+code readability should be high
+tc39 and mdn documentation prefer
+
+DataTypes
+(Number, Bigint, String, Boolean,
+null(standalone value {representation of empty value}),
+undefined(declare a variable but doesn't assign a value),
+Symbol(unique),
+Object
+)
+
+
+console.log(typeof(undefined))
+console.log(typeof(null))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
