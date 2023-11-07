@@ -1,0 +1,89 @@
+let score = "33abc";
+// console.log(typeof(score));
+
+let valueInNumber = Number(score);
+// console.log(valueInNumber);
+
+                                                          conversion in number shows this result               
+//"33" => 33
+//"33abc" => NaN
+//true => 1
+//false => 0
+
+                                                                     Boolean Conversion                                
+
+let isLoggedin = "";
+let knowValue = Boolean(isLoggedin)
+console.log(knowValue);
+
+//1 => true
+//0=> false
+//"hitesh" => true
+//"" => false
+
+
+
+                                                                   Same conversion in String                                
+
+
+
+
+
+                                                                       Operations                                            
+console.log(2+20);
+console.log(2-20);
+console.log(2/20);
+console.log(2*20);
+console.log(2**20);
+console.log(2%19);   //Modulo most use in cryptography
+
+
+console.log("1"+2); //12
+console.log(1+"2"); //12
+console.log("1"+2+2);//122
+console.log(1+2+"2");//32
+
+console.log(+true)            //conversion in number
+
+
+
+
+
+                                                                     learn about prefix and podtfix operator
+
+                                                                       Comparison operator
+
+
+console.log("2" > 1); 
+console.log("02" > 1); 
+
+console.log(null > 0);
+console.log(null == 0);
+console.log(null>= 0);
+
+
+console.log(undefined > 0);
+console.log(undefined == 0);
+console.log(undefined>= 0);
+
+//=== (checks data types as well as value);
+
+console.log("2" === 2);
+
+
+
+
+                                                                                Data Types
+1} Primitive Data Types(call by value (copy provided)) -- String, Number, Boolean, null, undefined, Symbol, BigInt
+2} Non Primitive DataTypes(call by refrence (direct access)) -- Array, Object, Functions
+
+JS is dynamically typed language
+
+
+
+
+
+
+
+
+
