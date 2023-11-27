@@ -3,7 +3,7 @@ const anotherId = Symbol(123);
 console.log(id === anotherId); //false
 
 
-                                                    /* Arrays and Object */
+                                                      /* Arrays and Object */
                                            
 let id = (123);
 const anotherId = (123);
@@ -103,6 +103,75 @@ console.log(url.split('/'));
 
 
                                                                   /* Maths and Numbers */
+
+
+                                                                      /*Numbers*/
+const score = 400;
+console.log(score)
+
+const balance = new Number(500);
+console.log(balance.toString().length)
+console.log(balance.toFixed(2))
+
+const otherNumber = 12345.89645;
+console.log(otherNumber.toPrecision(5));
+
+const hundreds = 1000000;
+console.log(hundreds.toLocaleString())
+
+
+                                                                      /*Maths*/
+
+console.log(Math.abs(-4));
+console.log(Math.round(4.6));
+console.log(Math.ceil(4.2));
+console.log(Math.floor(4.9));
+console.log(Math.min(4,3,6,8,9));
+console.log(Math.max(4,3,6,8,9));
+
+console.log(Math.floor(Math.random()*10)+1);
+
+const min = 10;
+const max = 20;
+
+
+// Imp 
+console.log(Math.floor(Math.random() * (max - min + 1) + min ));
+
+
+
+
+                                                        /* Date and Time*/
+
+let myDate = new Date();
+console.log(myDate.getFullYear())
+console.log(myDate.getMonth() + 1)
+console.log(myDate.toString())
+console.log(myDate.toISOString())
+
+console.log(myDate.toLocaleDateString())  // 27/11/2023
+console.log(myDate.toLocaleTimeString()) // 6:24:03 pm
+console.log(myDate.toLocaleString())  // 27/11/2023, 6:24:38 pm
+
+let createdDate = new Date(2024, 0 , 1);
+// let createdDate = new Date("06-15-2024");
+console.log(createdDate.toDateString());
+
+let myTimeStamp = Date.now();
+console.log(myTimeStamp);
+console.log(createdDate.getTime())
+
+console.log(Math.floor(Date.now()/100));  //converting in second
+
+
+
+
+                                                    /*Array*/
+
+
+
+
+
 
 
 
