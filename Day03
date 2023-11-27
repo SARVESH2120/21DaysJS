@@ -1,0 +1,10 @@
+let id = Symbol(123);
+const anotherId = Symbol(123);
+console.log(id === anotherId); //false
+
+
+let id = (123);
+const anotherId = (123);
+console.log(id === anotherId); //true
+
+
