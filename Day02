@@ -1,8 +1,11 @@
-let score = "33abc";
-// console.log(typeof(score));
+let score1 = 33;
+console.log(typeof(score1));
 
-let valueInNumber = Number(score);
-// console.log(valueInNumber);
+let score = "33abc";
+
+let valueInNumber = Number(score); //Convert in number 
+console.log(valueInNumber); //NaN
+console.log(typeof(NaN)); // Number
 
                                                           conversion in number shows this result               
 //"33" => 33
@@ -24,7 +27,10 @@ console.log(knowValue);
 
 
                                                                    Same conversion in String                                
-
+let value = 33;
+let Str = String(value);
+console.log(Str);
+console.log(typeof(Str))
 
 
 
@@ -49,7 +55,7 @@ console.log(+true)            //conversion in number
 
 
 
-                                                                     learn about prefix and podtfix operator
+                                                                     learn about prefix and postfix operator
 
                                                                        Comparison operator
 
@@ -57,14 +63,22 @@ console.log(+true)            //conversion in number
 console.log("2" > 1); 
 console.log("02" > 1); 
 
-console.log(null > 0);
-console.log(null == 0);
-console.log(null>= 0);
+console.log(null > 0); //false
+console.log(null == 0); //false
+console.log(null>= 0); //true
 
+/*
 
-console.log(undefined > 0);
-console.log(undefined == 0);
-console.log(undefined>= 0);
+The reason is that an equality checks == and comparison > < >= <= works differently.
+ Comparison converts null to an number, tratign it as a 0.  
+That's why null>= 0 true &
+ null > 0  false
+
+*/
+
+console.log(undefined > 0); //false
+console.log(undefined == 0); //false
+console.log(undefined>= 0); //false
 
 //=== (checks data types as well as value);
 
@@ -74,12 +88,15 @@ console.log("2" === 2);
 
 
                                                                                 Data Types
+How a data is store in memory and how it can be accessed through memory on that basis there are two types of categorization of data..
+
 1} Primitive Data Types(call by value (copy provided)) -- String, Number, Boolean, null, undefined, Symbol, BigInt
 2} Non Primitive DataTypes(call by refrence (direct access)) -- Array, Object, Functions
 
 JS is dynamically typed language
 
 
+Object and BrowserEvent do to complete JS..
 
 
 
