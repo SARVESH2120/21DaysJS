@@ -3,8 +3,107 @@ const anotherId = Symbol(123);
 console.log(id === anotherId); //false
 
 
+                                                    /* Arrays and Object */
+                                           
 let id = (123);
 const anotherId = (123);
 console.log(id === anotherId); //true
+
+
+const heros = ["amit" , "sarvesh" , "gupta"];
+heros.push("immortal");
+
+let myObj = {
+    name : "Sarvesh", 
+    age: 18,
+}
+
+const myfunct = function(){
+    console.log(sarvesh);
+}
+
+console.log(heros)
+console.log(typeof heros); //object
+console.log(typeof myfunct); // function
+console.log(typeof myObj); // object
+
+
+
+
+                                                              /* Stack and Heap Memory */
+
+
+
+/*
+Stack(Primitive)
+Heap(Non- Primitive)
+
+In primitive data types we get a copy of a variable 
+but in non primitive data types we get a refrence of a variable..
+
+*/
+
+let name = "sarvesh";
+let anotherName = name;
+anotherName = "gupta";
+
+console.log(name);
+console.log(anotherName);
+
+let userOne = {
+    name : "sarveshguptagkp18@gmail.com",
+    age: 22
+}
+
+let usertwo = userOne;
+usertwo.name = "bookexpo1810@gmail.com";
+
+console.log(usertwo);
+console.log(userOne);
+
+
+
+                                                                  /* Strings*/
+
+
+name = "SArvesh";
+title = "gupta";
+//Back tick helps in string interpolation
+console.log(`Hello my name is ${name.toUpperCase()} + ${title.toLowerCase()}`)
+
+
+
+const gameName = new String("SarVEshgupta");
+//This gives us a key value pair
+
+console.log(gameName[0]);
+console.log(gameName.__proto__);
+console.log(gameName.length)
+console.log(gameName.toLowerCase());
+console.log(gameName.charAt(2));
+console.log(gameName.indexOf('e'))
+
+const newGame = gameName.substring(2,11);
+console.log(newGame);
+
+const anNewGame  = gameName.slice(-12,9);
+console.log(anNewGame);
+
+const newStringOne = "     sarvesh   ";
+console.log(newStringOne);
+console.log(newStringOne.trim())
+
+
+const url = "https://github.com/SARVESH2120/21DaysJS/edit/main/Day03"
+console.log(url.replace('20' , '18'));
+console.log(url.includes('SARVESH'));
+console.log(url.split('/'));
+
+
+
+
+                                                                  /* Maths and Numbers */
+
+
 
 
