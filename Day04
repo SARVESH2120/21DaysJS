@@ -1,0 +1,107 @@
+                                              Arrays
+const myarr = [0,1,2,3,4,5];
+const myHero = ["amit", "sarvesh"];
+
+const myarr2 = new Array(1,2,3,4,5);
+console.log(myarr[2]);
+
+myarr.push(6); 
+console.log(myarr);         // [0, 1, 2,3, 4, 5, 6]
+myarr.unshift(8);
+console.log(myarr);         // [8, 0, 1, 2,3, 4, 5, 6]
+myarr.shift();
+console.log(myarr);         // [0, 1, 2,3, 4, 5, 6]
+
+const newArr = myarr.join();
+console.log(myarr);
+console.log(newArr); 
+console.log(typeof(newArr)); string 
+
+console.log("Original Array",myarr);                // [0, 1, 2,3, 4, 5, 6]
+const myn1 = myarr.slice(1,3);
+console.log("Slice" , myn1);                        // Slice [ 1, 2 ]
+console.log("Original Array",myarr);                // [0, 1, 2,3, 4, 5, 6]
+const myn2 = myarr.splice(1,3);                     // It(splice) cut down the original array
+console.log("Splice", myn2);                        // Splice [ 1, 2, 3 ]
+console.log("Original Array",myarr);                // [0, 4, 5, 6]
+
+
+
+
+
+
+const marvel_heros = ['thor', "ironman", "spiderman"];
+const dc_heros = ["superman", "flash", "batman"];
+
+marvel_heros.push(dc_heros);
+console.log(marvel_heros);  //[ 'thor', 'ironman', 'spiderman', [ 'superman', 'flash', 'batman' ] ]
+
+ const allheros = marvel_heros.concat(dc_heros);
+console.log(allheros);  // [ 'thor', 'ironman', 'spiderman',  'superman', 'flash', 'batman' ]
+
+const allnew_heros = [...marvel_heros, ...dc_heros];       //Spread operator
+console.log(allnew_heros);
+
+
+const fleet = [1,2,2,3,[4,5,5,6,7,[3,4,3,2,4,3,[32,2,21,3,34,32]]]]   //solve the depth of infinty array
+console.log(fleet.flat(Infinity));
+
+console.log(Array.isArray("Sarvesh"));
+console.log(Array.from("Sarvesh"));
+console.log(Array.from({name:""}));
+
+let score1 =2000;
+let score2 =4000;
+let score3 =6000;
+
+console.log(Array.of(score1,score2,score3));
+
+
+                                                      OBJECT P-1
+
+
+Singleton --> Object.create {any object which are create from constructor are of type of singleton}
+
+object literals
+
+const mySym = Symbol("key1");
+
+const JsUser = {
+    name: "Sarvesh",
+    "full name" : "Sarvesh Gupta",
+    [mySym] : "key1",
+    age: 22,
+    location: "jaipur",
+    email: "bookexpo1810@gmail.com",
+    isLoggedIn: false,
+    lastLoginDays: ["Monday", "Tuesday", "Friday"]
+}
+
+console.log(JsUser.email);
+console.log(JsUser["full name"]);
+console.log((JsUser[mySym]));
+
+console.log(JsUser)
+JsUser.email = "amit@gmail.com";
+Object.freeze(JsUser);         //it will freeze the object
+JsUser.email = "immortal@gmial.com";
+console.log(JsUser);
+
+JsUser.greeting = function(){
+    console.log("hello");
+}
+JsUser.greetingTwo = function(){
+    console.log(`hello  ${this["full name"]}`)
+}
+console.log(JsUser.greeting());
+console.log(JsUser.greetingTwo());
+
+
+
+                                                              OBJECT P-2
+
+
+
+
+
+
