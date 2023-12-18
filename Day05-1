@@ -1,0 +1,201 @@
+                                                                    Object P-2
+
+
+// const tinderUser  = new Object();            // Singleton Object
+const tinderUser = {};                         //Non- Singleton Object
+tinderUser.id = "123abc"
+tinderUser.name = "jayant"
+tinderUser.isLoogein = "always"
+
+console.log(tinderUser);                          //{ id: '123abc', name: 'jayant', isLoogein: 'always' }
+
+
+
+
+                                                                    Object Nesting
+
+const regularUser = {
+    email: "sarveshguptagkp18@gmail.com",
+    fullname: {
+        userFullName: {
+            firstName: "Sarvesh",
+            lastName: "Gupta",
+        }
+    }
+}
+console.log(regularUser.fullname.userFullName.firstName)  //Sarvesh
+//we can use optiional chaning in case of data comes from api
+
+
+
+
+                                                                     Object Merging
+const obj1 = {1:"A" , 2:"B" , 3:"c"};
+const obj2 = {4:"g" , 5:"h", 6:"o"};
+
+const obj3 = Object.assign({} ,obj1, obj2)  //{}--> target (obj2, obj1) --> source
+console.log(obj3)  //{ '1': 'A', '2': 'B', '3': 'c', '4': 'g', '5': 'h', '6': 'o' }
+
+
+
+
+                                                                 Use of Spread operator in object
+const obj1 = {1:"A" , 2:"B" , 3:"c"};
+const obj2 = {4:"g" , 5:"h", 6:"o"};
+
+const obj3 = {...obj1 , ...obj2} //spread operator
+console.log(obj3)  //{ '1': 'A', '2': 'B', '3': 'c', '4': 'g', '5': 'h', '6': 'o' }
+
+
+
+
+                                                                  Object format as API
+const user = [
+    {
+        id:"1",
+        email:"immortal@gmail.com"
+    },
+    {
+        id:"5",
+        email:"immortal@gmail.com"
+    },
+    {
+        id:"1",
+        email:"immortal@gmail.com"
+    },
+    {
+        id:"1",
+        email:"immortal@gmail.com"
+    },
+]
+
+console.log(user[1].id);    //5
+
+
+
+                                                              Miscelleanous Object property
+
+
+const tinderUser = {};                         //Non- Singleton Object
+tinderUser.id = "123abc"
+tinderUser.name = "jayant"
+tinderUser.isLoogein = "always"
+
+
+console.log(Object.keys(tinderUser));   //[ 'id', 'name', 'isLoogein' ]
+console.log(Object.values(tinderUser));     //[ '123abc', 'jayant', 'always' ]
+console.log(Object.entries(tinderUser));    //[ [ 'id', '123abc' ], [ 'name', 'jayant' ], [ 'isLoogein', 'always' ] ]
+
+
+
+                                                            
+                                                        Object destructuring and JSON API
+const course = {
+    name: "sarvesh",
+    title: "gupta",
+    courseInstructor : "Hitesh Choudhary"
+}
+
+const {name , title, courseInstructor: ins} = course
+console.log(title)
+console.log(ins);
+
+
+
+
+
+const navbar = ({company}) =>{         ///obj destructing
+
+}
+
+navbar(company = "hitesh")
+
+
+
+
+                                                             JSON format   API
+{
+    "name": "hitesh",
+    "courseName":" JS",
+    "price": "free",
+}
+
+
+
+
+
+                                                                Function
+function addTwoNumber(num1,num2){       //params
+    console.log(num1  + num2);
+}
+addTwoNumber(4,5);      //args
+
+
+function sumOfTwoNUm(num1 , num2){
+    return num1 + num2;
+}
+const val = sumOfTwoNUm(3,5);
+console.log(val);
+
+
+
+
+function loginUserMessage(username){
+    if(!username){
+        console.log("Please enter a username");
+        return
+    }
+    return `${username} just looged in`
+    
+}
+console.log(loginUserMessage("sarvesh"));  // sarvesh just looged in
+
+
+
+
+                                              
+                                                          shoppingCart(REST OPERATOR)
+
+function calculatorCaartPrice(val1, val2, ...num1){
+    return num1
+}
+console.log(calculatorCaartPrice(200,400,5000,70000))   //[ 5000, 70000 ]
+
+
+
+                                                                paasing a obj
+const user = {
+    userName: "hitesh",
+    prices: 100
+}
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.userName} and price is ${anyObject.prices}`);
+}
+handleObject(user)
+
+
+
+                                                              passing a direct obj
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.userName} and price is ${anyObject.prices}`);
+}
+handleObject({
+    userName: "Sarvesh",
+    prices: 200
+})
+
+
+                                                                    passing a array
+const myNewArray = [200,400,500,100];
+function returnSeconArray(getArray){
+    return getArray[3];
+}
+console.log(returnSeconArray(myNewArray));
+
+
+
+
+    
+
+ 
