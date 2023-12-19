@@ -14,6 +14,101 @@
 })('hitesh');
 
 
+Exectuion Context
+if else
+switch case
+
+
+
+                                                              truthy falsy value
+1] string has true value
+2] empty string has false value
+3] falsy value -- 0 , -0 , null, undefined, NaN, BigInt 0n
+4] truthy value --  "0", 'false', " ", [], {}, function(){}, 
+5]
+
+
+
+                                                            check array and object empty
+const UserEmail = [];
+if(UserEmail.length === 0){
+    console.log("Array is empty")
+}
+
+const emptyObject = {};
+if(Object.keys(emptyObject).length === 0){
+    console.log("Object is empty")
+}
+
+
+                                                    Nullish Coalescing Operator (??): null undefined
+
+let val1;
+val1 = 5??10;       //5
+val1= null??10;     //10
+val1 = undefined?? 90;      //90
+console.log(val1)
+
+
+
+                                                                Ternary operator
+// conditon ? true : false
+const iceTeaPrice = 90 ; 
+iceTeaPrice >= 92 ? console.log("more than 90"): console.log("less than 90");
+
+
+
+
+
+                                                                      Loop
+for(let i = 0 ; i<=10 ; i++){
+    console.log(i);
+}
+
+
+                                                                      Table
+for(let i = 1 ; i<= 10 ; i++){
+    console.log(`Table of ${i}`)
+    for(let j = 1 ; j<=10 ; j++){
+        console.log(`${i} * ${j} = ${i*j}`);
+
+    }
+}
+
+
+                                                                Use of loop on array
+let myArray = ['flash', 'superman', 'batman'];
+for(let i = 0 ; i< myArray.length ; i++ ){
+    const element = myArray[i]
+    console.log(element)
+}
+
+
+                                                                  break and continue Keyword
+
+                                                                    for of loop
+const arr = [1,2,"sarvesh",4,5,6,7];
+for(const num of arr){
+    console.log(num);
+}
+
+
+                                                                                  map
+const map = new Map();
+map.set('IN',"INDIA")
+map.set('US',"UNITES STATE OF AMERICA")
+map.set('FR',"FRANCE")
+console.log(map);
+
+for(const [key,value] of map){
+    console.log(key, './' , value)
+}
+
+
+
+                                                
+
+
 
 
 
