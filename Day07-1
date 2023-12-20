@@ -1,1 +1,86 @@
+                                      forin
+
+const myObject={
+    js: "javascript",
+    cpp: "c++",
+    rb: "ruby",
+    swift: "swift by apple"
+
+}
+
+for (const key in myObject) {
+    console.log(`${key} `)
+}
+
+                                                                      forEach
+
+const coding = ["js","cpp", "java", "python" , "golang", "swift"];
+coding.forEach(function (item){
+    console.log(item);
+})
+
+
+const coding = ["js","cpp", "java", "python" , "golang", "swift"];
+coding.forEach( (item)=>{
+    console.log(item);
+})
+
+
+const coding = ["js","cpp", "java", "python" , "golang", "swift"];
+coding.forEach( (item,index, arr)=>{
+    console.log(item,index, arr);
+})
+
+
+
+
+
+const arr = [
+    {
+        myName: "Sarvesh",
+        mySurname: "Gupta"
+    },
+    {
+        myName: "Immmo",
+        mySurname: "king"
+    },
+    {
+        myName: "Amit",
+        mySurname: "k"
+    },
+    {
+        myName: "Ant",
+        mySurname: "Man"
+    }
+]
+
+arr.forEach((item)=>{
+    console.log(item.myName);
+})
+
+
+
+
+
+// foreach does't return a value
+
+                                                            filter
+
+const nums = [1,2,3,4,5,6,7,8,9,10];
+
+let newNums = nums.filter((val)=>{
+    return val > 6;
+})
+console.log(newNums);
+
+
+
+const nums = [1,2,3,4,5,6,7,8,9,10];
+
+let newNums = nums.filter((val)=>{
+    return val > 6;
+})
+//If scope use the use return keyword else direclty implicit return happens
+console.log(newNums);
+
 
