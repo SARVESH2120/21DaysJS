@@ -1,0 +1,37 @@
+                                                      DOM(Document Object Model) Manupulation
+document.getElementById('title')
+document.getElementById('title').id
+document.getElementById('title').className
+document.getElementById('title').getAttribute('id');
+document.getElementById('title').getAttribute('class');
+document.getElementById('title').setAttribute('class','name');  //ovrides previos attribute
+let title = document.getElementById('title');
+title.style.backgroundColor = "red";
+title.style.color = "white";
+title.style.padding = "20px";
+title.textContent //'DOM learning'
+
+innerText gives a values which are visible on a page
+textContent gives a value which are hidden as weel
+innerHTML give a html element as well as content
+
+document.querySelector('h1');
+document.querySelector('h2');
+document.querySelectorAll('h2');
+document.querySelector('#title');
+document.querySelector('.heading');
+innerText modifies a value;;
+
+
+--On wikipedia page
+
+document.querySelectorAll('h3');
+let h3 = document.querySelectorAll('h3');
+Array.from(h3);
+let con = Array.from(h3);
+con.forEach((item)=> item.style.color ="red");
+con.forEach((item)=> item.style.backgroundColor ="yellow");
+con.forEach((item)=> item.innerText ="Sarvesh");
+
+
+
