@@ -84,3 +84,59 @@ let newNums = nums.filter((val)=>{
 console.log(newNums);
 
 
+
+
+const arr = [
+    {
+        title: "Book One",
+        genre: "Fiction",
+        publish: 1990
+    },
+    {
+        title: "Book two",
+        genre: "Non - Fiction",
+        publish: 1996
+    },
+    {
+        title: "Book three",
+        genre: "Fiction",
+        publish: 1999
+    },
+    {
+        title: "Book four",
+        genre: "Non-Fiction",
+        publish: 2002
+    },
+    {
+        title: "Book five",
+        genre: "Fiction",
+        publish: 2004
+    },
+    {
+        title: "Book six",
+        genre: "Non-Fiction",
+        publish: 2008
+    },
+    {
+        title: "Book seven",
+        genre: "Fiction",
+        publish: 2011
+    },
+    {
+        title: "Book eight",
+        genre: "Non-Fiction",
+        publish: 2008
+    },
+    {
+        title: "Book nine",
+        genre: "Fiction",
+        publish: 2012
+    },
+
+    
+]
+
+
+let userbooks = arr.filter((bk)=> bk.genre === "Fiction");
+let userbooks = arr.filter((bk)=>{return (bk.publish >=2000 && bk.genre === "Fiction")})
+console.log(userbooks);
