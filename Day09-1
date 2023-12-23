@@ -1,0 +1,51 @@
+                                                    EVENT PROPAGATION
+
+document.getElementById('owl').addEventListener('click', function(e){
+    alert("owl clicked")
+})
+
+
+//type, timestamp, defaultPrevented, 
+//target, toElement, srcElement , currentTarget
+//clientX, clientY, screenX, screenY
+//altket, ctrlkey,shiftkey, keycode
+
+
+// eventPropagation -- eventbubling(inside to outside propogation , first owl click then ul comes in console remeber example, just like bubble raise low to high), eventcapturing(top to bootom)
+// e.stoppropgation 
+
+// to do list by eventpropgation remove the element 
+
+
+
+
+                                                    Async Code
+// js- syncronous and single threaded
+//exec context - each operation waits for the last one to complete before executing
+//block code(block the flow of program, read file sync) vs non blocking code(doesn't block execution , read fle async)
+// fetch() API -- High Priority
+// sync code - 
+// async code - 
+
+
+
+                                                    setTimeOut()
+
+
+const saySarvesh = () => {
+    console.log("sarvesh")
+}
+
+const saySarvesh2 = ()=>{
+    console.log("sarvesh2")
+}
+const changeText=()=>{
+    document.querySelector('h1').innerHTML = "Best js series"
+}
+setTimeout(saySarvesh, 2000);
+setTimeout(changeText,5000)
+
+//settimeout is a function isn't a core js
+//settimeout takes a callback function and tiomeout
+
+                                                clearTimeOut()
