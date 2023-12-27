@@ -49,3 +49,9 @@ setTimeout(changeText,5000)
 //settimeout takes a callback function and tiomeout
 
                                                 clearTimeOut()
+
+// clearTimeout wants refrence which timeout i have to remove 
+document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(changeme);
+    console.log("Stopped")
+})
